@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: "auto auto";
+            grid-template-rows: "auto auto";
+            grid-template-areas: " jai jai "
+            " costStructure revenuestreams";
+            grid-gap: 15px;
+        }
+        .ram{
+         
+            grid-area: jai ;
+
+        }
+        cost{
+            background-color: black;
+            grid-area: costStructure;
+        }
+        revenue{
+            background-color:green;
+            grid-area: revenuestreams;
+        }
+        .sita{
+            font-size: 13px;
+            
+            padding-left: 10px ;
+            padding-top: 15px;
+            padding-bottom: 50px;
+            
+            color: white;
+        }
+
+        div{
+            display: grid;
+            grid-template-columns: "auto auto auto auto auto";
+            grid-template-rows: "auto auto ";
+            grid-template-areas: "problem1 problem2 problem3 problem4 problem5"
+            "problem1 keymerits problem3 channels problem5";
+                                                            
+            grid-gap:15px;
+
+        }
+        problem{
+            background-color: aqua;
+            grid-area:problem1 ;
+
+        }
+        solution{
+            background-color: blueviolet;
+            grid-area:problem2 ;
+        }
+        unique{
+            background-color: brown;
+            grid-area: problem3;
+
+        }
+        unfair{
+            background-color: orange;
+            grid-area: problem4;
+        }
+        customer{
+            background-color: yellow;
+            grid-area: problem5;
+        }
+        key{
+            background-color: deeppink;
+            grid-area: keymerits;
+        }
+        channel{
+            background-color: darkgreen;
+            grid-area: channels;
+        }
+        .jai{
+            font-size: 13px;
+            padding-left: 10px;
+           
+           
+           
+            padding-top: 15px;
+            padding-bottom: 50px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="ram">
+        <problem class="jai">problem</problem>
+    <solution class="jai">solution</solution>
+    <unique class="jai">Unique selling proposition</unique>
+    <unfair class="jai">Unfair Advantage</unfair>
+    <customer class="jai">Customer Segments</customer>
+    <key class="jai">Key Metrics</key>
+    <channel class="jai">Channels</channel>
+    </div>
+    <cost class="sita">Cost Structure</cost>
+    <revenue class="sita">Revenue Streams</revenue>
+   
+</body>
+</html>

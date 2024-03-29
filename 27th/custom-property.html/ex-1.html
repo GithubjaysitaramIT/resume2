@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --a:red;
+            --b:aqua;
+            --c:blue;
+            --d:200px;
+        }
+        body{
+            /* background-color:aqua */
+            background-color: var(--b);             /*var()--->var function */
+        }
+        .div1{
+            /* width: 200px;
+            height: 200px; */
+            /* width: var(--d);
+            height: var(--d); */
+
+            /* background-color: blue; */
+
+            background-color: var(--c);
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .div2{
+            /* width: 200px;
+            height: 200px; */
+
+            /* width: var(--d);
+            height:var(--d); */
+            /* background-color: red; */
+            background-color: var(--a);
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .c1{
+            width: 80px;
+            height: 80px;
+            /* background-color: aqua; */
+            background-color: var(--b);
+        }
+        .c2{
+            width: 80px;
+            height: 80px;
+            /* background-color: aqua; */
+
+            background-color: var(--b);
+        }
+        h1{
+            /* color: red; */
+
+            color: var(--a);
+        }
+        h2{
+            color: blue;
+
+            color: var(--c);
+        }
+        .c{
+            width: var(--d);
+            height: var(--d);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1 c">
+        <div class="c1">
+            <h1>HIII</h1>
+        </div>
+    </div>
+    <div class="div2 c">
+        <div class="c2">
+            <h2>hiii</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

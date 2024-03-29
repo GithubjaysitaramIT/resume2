@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
+            
+        }
+        body .clock{
+            width: 300px;
+            height: 300px;
+            background-color: grey;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+           
+            
+        }
+        .point{
+            width: 8px;
+            height: 8px;
+            background-color:rgb(195, 155, 35);
+            border-radius: 50%;
+            
+        }
+        span{
+            transform: rotate(calc(30deg*var(--d)));
+            inset: 50px;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <div class="clock">
+            <span style="--d:1"><em>1</em></span>
+            <span style="--d:2"><em>2</em></span>
+            <span style="--d:3"><em>3</em></span>
+            <span style="--d:4"><em>4</em></span>
+            <span style="--d:5"><em>5</em></span>
+            <span style="--d:6"><em>6</em></span>
+            <span style="--d:7"><em>7</em></span>
+            <span style="--d:8"><em>8</em></span>
+            <span style="--d:9"><em>9</em></span>
+            <span style="--d:10"><em>10</em></span>
+            <span style="--d:11"><em>11</em></span>
+            <span style="--d:12"><em>12</em></span>
+            <div class="point"></div>
+            
+                   </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+P{
+    font-size:medium;
+    font-style: italic;
+    font-family: ;
+
+}
+h1{
+    font-weight: normal;
+}
+#abc{
+    font-variant:small-caps;
+}
+#jai{
+    color:yellow;
+    color:rgb(255,255,255);
+    color: rgb(20,255,0);
+    color: #a1b2c3;
+    
+}

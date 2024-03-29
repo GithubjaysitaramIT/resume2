@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         :root{
+            --a:200px;
+            --b:red;
+            --c:green;
+        }
+        div{
+            width: var(--a);
+            height: var(--a);
+            background-color: var(--c);
+            color: var(--b);
+            font-size: 30px;
+            margin: 10px;
+            margin-left: 300px;
+            margin-top: 200px;
+            transition: all 3s;      /*for aplying slow motion */             
+        }
+        .a1:hover{
+            transform: translateX(300px);
+
+    
+        }
+        .a2:hover{
+            transform: rotateY(180deg)
+
+        }
+        .a3:hover{
+            transform: scale(1.5, 1.5);
+        }
+        .a4:hover{
+            transform: skew(60deg);
+        }
+
+        button{
+            padding: 4opx 80px;
+            margin-left: 300px;
+            border-radius: 40px;
+            font-size: 30px;
+        }
+        button:hover{
+            background-color: aqua;
+            color: red;
+            transform: scale(1.09,1.09);
+        }
+    </style>
+</head>
+<body>
+    <div class="a1">translate</div>
+    <div class="a2">rotate</div>
+    <div class="a3">scale</div>
+    <div class="a4">skew</div>
+    <button>SUBMIT</button>
+    
+</body>
+</html>

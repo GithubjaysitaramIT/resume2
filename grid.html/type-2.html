@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: "header header header"
+            "aside sec main"
+            "footer footer footer";
+            /*grid-column-gap: 20px;
+            grid-row-gap: 20px;  */
+            grid-gap: 20px 20px;
+        }
+        header{
+            background-color: aqua;
+            grid-area: header;
+
+        }
+        aside{
+            background-color: blue;
+            grid-area: aside;
+        }
+        section{
+            background-color: blueviolet;
+            grid-area: sec;
+
+        }
+        main{
+            background-color: gray;
+            grid-area: main;
+        }
+        footer{
+            background-color: black;
+            grid-area: footer;
+        }
+
+        .common{
+            font-size: 30px;
+            color: white;
+            padding: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header  class="common">JAIRAM</header>
+    <aside  class="common">MUMMY</aside>
+    <section  class="common">SECTION</section>
+    <main  class="common">MAIN</main>
+    <footer  class="common">FOOTER</footer>
+
+
+
+
+</body>
+</html>

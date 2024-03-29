@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        div{
+            width: calc(100px*var(--a));
+            height: calc(100px*var(--a));
+            /* background-color: red; */
+            background-color: var(--b);
+            margin-left: 300px;
+            rotate: calc(30deg*var(--a));
+
+        }
+
+    </style>
+</head>
+<body>
+    <div style="--a:1:; --b:red;">1</div>
+    <div style="--a:2:; --b:blue;">2</div>
+    <div style="--a:3:; --b:green;">3</div>
+    <div style="--a:4:; --b:grey;">4</div>
+    <button>SUBMIT</button>
+</body>
+</html>

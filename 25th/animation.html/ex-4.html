@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+                                                             /* transision in css search ------forthe animation properties detailed infotmation*/
+            background-color: aquamarine;                            
+            align-items: center;
+            text-align: center;
+            top: 50px;
+        }
+        .common{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            animation: move 10s 2s infinite alternate;
+            position: relative;
+        }
+        @keyframes move {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 800px;
+            }
+            
+        }
+        .child1{
+            background-color: red;
+            animation-timing-function: ease;
+        }
+        .child2{
+            background-color: aqua;
+            animation-timing-function: ease-in;
+        }
+        .child3{
+            background-color: gray;
+            animation-timing-function: ease-out;
+        }
+        .child4{
+            background-color: blueviolet;
+            animation-timing-function: ease-in-out;
+        }
+        .child5{
+            background-color: green;
+            animation-timing-function: linear;
+        }
+
+    </style>
+</head>
+<body>
+
+       <!-- ease==> default value
+       ease-in==> starting slow speed
+       ease-out==> ending slow speed
+       ease-in-out==> constant speed -->
+
+    <div class="common child1">ease</div>
+    <div class="common child2">ease-in</div>
+    <div class="common child3">ease-out</div>
+    <div class="common child4">ease-in-out</div>
+    <div class="common child5">linear</div>
+</body>
+</html>
